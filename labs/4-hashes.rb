@@ -30,3 +30,19 @@ bitcoin = bitcoin.to_f
 
 # 3. inspect the bitcoin_data hash
 # puts bitcoin_data
+
+# store usd rate of bitcoin
+bitcoin_usd = bitcoin_data["bpi"]["USD"]["rate_float"]
+
+puts bitcoin_usd
+
+# calculate value of bitcoin
+
+value = bitcoin_usd * bitcoin
+
+puts value
+
+puts "1 Bitcoin is valued at $#{bitcoin_usd}"
+puts "Your Bitcoin is worth $#{value}."
+
+

@@ -15,3 +15,23 @@
 # HINTS
 # Learn to read the documentation!
 # https://ruby-doc.org/core-2.7.0/Array.html
+
+my_list = ["milk", "eggs", "bacon", "apples"]
+her_list = ["beer", "cookies", "apples"]
+
+our_list = my_list + her_list
+
+sorted_list = our_list.sort
+
+deduped_list = sorted_list.uniq
+
+# final_list = deduped_list.map! {|x| "buy " + x}
+
+puts "Buy #{deduped_list[0]}"
+puts "Buy #{deduped_list[1]}"
+puts "Buy #{deduped_list[2]}"
+puts "Buy #{deduped_list[3]}"
+puts "Buy #{deduped_list[4]}"
+puts "Buy #{deduped_list[5]}"
+
+# puts final_list
